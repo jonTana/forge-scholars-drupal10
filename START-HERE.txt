@@ -1,0 +1,10 @@
+Forge Scholars — Drupal 10 package
+
+1. On this GitHub page, click the green Code button, then Download ZIP.
+2. Unzip it.
+3. Copy web/themes/custom/forge_scholars into your Drupal 10 site at web/themes/custom/.
+4. Copy web/modules/custom/forge_scholars_signup into web/modules/custom/.
+5. Enable the module "Forge Scholars signup".
+   That turns on this theme and sets the front page to /forge.
+
+If images are still .b64 files, run: sh scripts/restore-media.sh
