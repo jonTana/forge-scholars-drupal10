@@ -1,0 +1,10 @@
+name: Forge Scholars
+type: theme
+description: 'Landing page for the Forge Scholars award. Drupal 10.'
+core_version_requirement: ^10
+base theme: false
+libraries:
+  - forge_scholars/global
+regions:
+  highlighted: Highlighted
+  content: Content

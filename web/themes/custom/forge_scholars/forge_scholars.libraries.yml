@@ -1,0 +1,9 @@
+global:
+  css:
+    theme:
+      css/landing.css: {}
+  js:
+    js/landing.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
