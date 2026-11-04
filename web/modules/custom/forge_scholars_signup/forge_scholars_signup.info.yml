@@ -1,0 +1,5 @@
+name: 'Forge Scholars signup'
+type: module
+description: 'Front page and application-kit requests for the Forge Scholars award.'
+core_version_requirement: ^10
+package: Forge

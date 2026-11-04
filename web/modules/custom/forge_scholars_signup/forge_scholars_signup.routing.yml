@@ -1,0 +1,17 @@
+forge_scholars.front:
+  path: '/forge'
+  defaults:
+    _controller: '\Drupal\forge_scholars_signup\Controller\LandingController::page'
+    _title: 'Forge Scholars'
+  requirements:
+    _access: 'TRUE'
+
+forge_scholars.signups:
+  path: '/admin/forge/signups'
+  defaults:
+    _controller: '\Drupal\forge_scholars_signup\Controller\SignupAdminController::listing'
+    _title: 'Kit requests'
+  requirements:
+    _permission: 'view forge scholar signups'
+  options:
+    _admin_route: TRUE

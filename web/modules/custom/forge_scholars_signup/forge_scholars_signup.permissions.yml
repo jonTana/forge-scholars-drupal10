@@ -1,0 +1,4 @@
+view forge scholar signups:
+  title: 'View Forge Scholars kit requests'
+  description: 'See the names and emails collected on the landing page.'
+  restrict access: true

@@ -1,0 +1,5 @@
+forge_scholars.signups:
+  title: 'Kit requests'
+  description: 'Application-kit emails from the Forge Scholars front page.'
+  route_name: forge_scholars.signups
+  parent: system.admin_reports

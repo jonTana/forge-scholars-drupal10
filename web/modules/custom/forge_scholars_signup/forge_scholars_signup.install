@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @file
+ * Install, schema, and theme setup for Forge Scholars.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function forge_scholars_signup_schema() {
+  return [
+    'forge_scholars_signup' => [
+      'description' => 'Application-kit requests from the landing page.',
+      'fields' => [
+        'id' => [
+          'type' => 'serial',
+          'unsigned' => TRUE,
+          'not null' => TRUE,
+        ],
+        'first_name' => [
+          'type' => 'varchar',
+          'length' => 80,
+          'not null' => TRUE,
+        ],
+        'email' => [
+          'type' => 'varchar',
+          'length' => 254,
+          'not null' => TRUE,
+        ],
+        'track' => [
+          'type' => 'varchar',
+          'length' => 32,
+          'not null' => TRUE,
+        ],
+        'created' => [
+          'type' => 'int',
+          'not null' => TRUE,
+        ],
+      ],
+      'primary key' => ['id'],
+      'indexes' => [
+        'email' => ['email'],
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_install().
+ */
+function forge_scholars_signup_install() {
+  $theme_installer = \Drupal::service('theme_installer');
+  if (!\Drupal::service('theme_handler')->themeExists('forge_scholars')) {
+    $theme_installer->install(['forge_scholars']);
+  }
+  \Drupal::configFactory()->getEditable('system.theme')
+    ->set('default', 'forge_scholars')
+    ->set('admin', 'claro')
+    ->save();
+  \Drupal::configFactory()->getEditable('system.site')
+    ->set('name', 'Forge Scholars')
+    ->set('page.front', '/forge')
+    ->save();
+}
