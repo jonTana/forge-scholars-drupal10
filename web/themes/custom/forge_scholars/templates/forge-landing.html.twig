@@ -1,0 +1,241 @@
+<a class="fs-skip" href="#main">{{ 'Skip to content'|t }}</a>
+<div id="top">
+  <header class="fs-header" data-forge-nav>
+    <div class="fs-rule" aria-hidden="true"></div>
+    <div class="fs-wrap fs-bar">
+      <a class="fs-brand" href="#top">
+        <img src="{{ base_path }}{{ directory }}/images/mark.svg" alt="" width="32" height="32">
+        <span>{{ 'Forge Scholars'|t }}</span>
+      </a>
+      <nav class="fs-nav-desk" aria-label="{{ 'Page'|t }}">
+        <a href="#award">{{ 'The award'|t }}</a>
+        <a href="#tracks">{{ 'Tracks'|t }}</a>
+        <a href="#stories">{{ 'Stories'|t }}</a>
+        <a href="#kit">{{ 'Kit'|t }}</a>
+      </nav>
+      <a class="fs-btn fs-btn--desktop" href="#kit">{{ 'Request the kit'|t }}</a>
+      <button class="fs-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="fs-mobile-nav">
+        <span class="fs-sr">{{ 'Open menu'|t }}</span>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.6"></path>
+        </svg>
+      </button>
+    </div>
+    <nav id="fs-mobile-nav" class="fs-nav-panel" data-nav-panel aria-label="{{ 'Page'|t }}">
+      <div class="fs-wrap">
+        <a href="#award">{{ 'The award'|t }}</a>
+        <a href="#tracks">{{ 'Tracks'|t }}</a>
+        <a href="#stories">{{ 'Stories'|t }}</a>
+        <a href="#kit">{{ 'Kit'|t }}</a>
+        <a class="fs-btn" href="#kit">{{ 'Request the kit'|t }}</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="fs-hero" aria-labelledby="hero-title">
+      <div class="fs-wrap fs-hero-grid">
+        <div>
+          <p class="fs-kicker">{{ '2027 cohort · 120 awards'|t }}</p>
+          <h1 id="hero-title">{{ 'Fund the project. Not the performance.'|t }}</h1>
+          <p class="fs-lead">{{ 'Forge Scholars is a need-blind award of up to $48,000 for undergraduates who build something their neighbors can use. No GPA floor. No prestige essay. The work has to be real, and it has to stay close to home.'|t }}</p>
+          <div class="fs-actions">
+            <a class="fs-btn" href="#kit">{{ 'Request the kit'|t }}</a>
+            <a class="fs-btn fs-btn--line" href="#tracks">{{ 'See the four tracks'|t }}</a>
+          </div>
+        </div>
+        <figure class="fs-figure">
+          <img src="{{ base_path }}{{ directory }}/images/hero.jpg" alt="{{ 'Two students building a wooden sidewalk library on a city street in late-afternoon light'|t }}" width="1792" height="1008">
+          <figcaption>{{ 'Sidewalk library, El Paso. Civic cohort, built on a Saturday.'|t }}</figcaption>
+        </figure>
+      </div>
+      <dl class="fs-wrap fs-stats">
+        <div><dt>{{ 'Maximum award'|t }}</dt><dd>$48k</dd></div>
+        <div><dt>{{ 'Scholars a year'|t }}</dt><dd>120</dd></div>
+        <div><dt>{{ 'GPA floor'|t }}</dt><dd>{{ 'None'|t }}</dd></div>
+        <div><dt>{{ 'Must stay within'|t }}</dt><dd>{{ '30 mi'|t }}</dd></div>
+      </dl>
+    </section>
+
+    <section id="award" class="fs-award" aria-labelledby="award-title">
+      <div class="fs-wrap fs-split">
+        <div>
+          <p class="fs-kicker">{{ 'The award'|t }}</p>
+          <h2 id="award-title">{{ 'We pay for the hours a job would have taken.'|t }}</h2>
+          <p class="fs-lead">{{ 'Most scholarships reward the student who already has time. Forge pays undergraduates who are making something their neighbors can touch — then removes the shift that was in the way.'|t }}</p>
+        </div>
+        <ul class="fs-promises">
+          <li>{{ 'Up to $48,000 across four years'|t }}</li>
+          <li>{{ 'A written decision, including a no'|t }}</li>
+          <li>{{ 'You keep the work. No equity, no IP claim, no logo on the door.'|t }}</li>
+        </ul>
+      </div>
+      <ol class="fs-wrap fs-features">
+        <li>
+          <p>01</p>
+          <h3>{{ 'Need-blind'|t }}</h3>
+          <p>{{ 'Family income is read only after the project is scored. It never breaks a tie the other way.'|t }}</p>
+        </li>
+        <li>
+          <p>02</p>
+          <h3>{{ 'No GPA floor'|t }}</h3>
+          <p>{{ 'A 2.1 who shipped a bus shelter outranks a 4.0 with a hypothetical app.'|t }}</p>
+        </li>
+        <li>
+          <p>03</p>
+          <h3>{{ 'Paid summer'|t }}</h3>
+          <p>{{ 'An $8,000 stipend so the build replaces a second job instead of stacking on top of one.'|t }}</p>
+        </li>
+        <li>
+          <p>04</p>
+          <h3>{{ 'A person, not a portal'|t }}</h3>
+          <p>{{ 'One practitioner in your town. Two calls a month. No webinar.'|t }}</p>
+        </li>
+        <li>
+          <p>05</p>
+          <h3>{{ 'Thirty-mile rule'|t }}</h3>
+          <p>{{ 'The work has to be usable within 30 miles of where you sleep.'|t }}</p>
+        </li>
+        <li>
+          <p>06</p>
+          <h3>{{ 'Four years, if it lasts'|t }}</h3>
+          <p>{{ 'The award renews while the project is still in use. If it dies, so does the check.'|t }}</p>
+        </li>
+      </ol>
+      <div class="fs-wrap fs-midcta">
+        <p>{{ 'The application is one project, one budget, and one neighbor who will use it.'|t }}</p>
+        <a class="fs-btn" href="#kit">{{ 'Start with the kit'|t }}</a>
+      </div>
+    </section>
+
+    <section id="tracks" class="fs-tracks" aria-roledescription="{{ 'carousel'|t }}" aria-label="{{ 'Award tracks'|t }}" data-forge-tracks tabindex="0">
+      <div class="fs-wrap">
+        <div class="fs-track-head">
+          <div>
+            <p class="fs-kicker">{{ 'Four tracks'|t }}</p>
+            <h2>{{ 'Pick the work. The money follows.'|t }}</h2>
+          </div>
+          <div class="fs-arrows">
+            <button class="fs-icon-btn" type="button" data-prev aria-label="{{ 'Previous track'|t }}">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6"></path></svg>
+            </button>
+            <button class="fs-icon-btn" type="button" data-next aria-label="{{ 'Next track'|t }}">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M10 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6"></path></svg>
+            </button>
+          </div>
+        </div>
+        <p class="fs-track-note">{{ 'Every award sits in one track. The amounts differ because the summers differ — not because one field is nobler.'|t }}</p>
+        <div class="fs-stage">
+          <div class="fs-slides">
+            <img class="fs-slide is-active" data-slide data-name="Civic build" data-award="$48,000" data-summary="Sidewalk libraries, bus-stop shade, and the unglamorous fixes a block actually asked for." src="{{ base_path }}{{ directory }}/images/track-civic.jpg" alt="{{ 'Two students painting a neighborhood map on an exterior wall'|t }}" width="1728" height="1152">
+            <img class="fs-slide" data-slide data-name="Climate craft" data-award="$42,000" data-summary="Rain gardens, repair cafés, and cooling on the lots you already walk past." src="{{ base_path }}{{ directory }}/images/track-climate.jpg" alt="{{ 'A student planting a rain garden beside a brick school'|t }}" width="1728" height="1152">
+            <img class="fs-slide" data-slide data-name="Teaching lab" data-award="$36,000" data-summary="After-school rooms and bilingual lessons, taught by someone who lives in the zip code." src="{{ base_path }}{{ directory }}/images/track-teaching.jpg" alt="{{ 'A tutor working with two children at a kitchen table'|t }}" width="1728" height="1152">
+            <img class="fs-slide" data-slide data-name="Main street" data-award="$40,000" data-summary="A grocer, a tool library, a Saturday market — a job that is still there after graduation." src="{{ base_path }}{{ directory }}/images/track-main-street.jpg" alt="{{ 'A young grocer arranging produce outside a neighborhood shop'|t }}" width="1728" height="1152">
+          </div>
+          <div class="fs-stage-copy">
+            <p class="fs-count" data-track-count>01 / 04</p>
+            <div>
+              <h3 data-track-title>{{ 'Civic build'|t }}</h3>
+              <p class="fs-award-amount" data-track-amount>$48,000</p>
+              <p data-track-summary>{{ 'Sidewalk libraries, bus-stop shade, and the unglamorous fixes a block actually asked for.'|t }}</p>
+            </div>
+            <a class="fs-btn fs-btn--inverse" href="#kit">{{ 'Apply in this track'|t }}</a>
+          </div>
+        </div>
+        <div class="fs-pager">
+          <div class="fs-dots" role="tablist" aria-label="{{ 'Choose a track'|t }}">
+            <button class="fs-dot" type="button" role="tab" data-dot="0" aria-current="true" aria-label="{{ 'Civic build'|t }}">01</button>
+            <button class="fs-dot" type="button" role="tab" data-dot="1" aria-label="{{ 'Climate craft'|t }}">02</button>
+            <button class="fs-dot" type="button" role="tab" data-dot="2" aria-label="{{ 'Teaching lab'|t }}">03</button>
+            <button class="fs-dot" type="button" role="tab" data-dot="3" aria-label="{{ 'Main street'|t }}">04</button>
+          </div>
+          <div class="fs-arrows--mobile">
+            <button class="fs-icon-btn" type="button" data-prev aria-label="{{ 'Previous track'|t }}">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6"></path></svg>
+            </button>
+            <button class="fs-icon-btn" type="button" data-next aria-label="{{ 'Next track'|t }}">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M10 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stories" class="fs-stories" aria-labelledby="stories-title">
+      <div class="fs-wrap">
+        <p class="fs-kicker">{{ 'Scholars'|t }}</p>
+        <h2 id="stories-title">{{ 'They did not write about potential.'|t }}</h2>
+        <p class="fs-track-note">{{ 'Three projects from the last cohort. The work is the point.'|t }}</p>
+        <div class="fs-stories-grid">
+          <figure class="fs-card fs-card--lead">
+            <img src="{{ base_path }}{{ directory }}/images/portrait-amira.jpg" alt="{{ 'Portrait of Amira Solano'|t }}" width="1200" height="1600">
+            <div class="fs-quote">
+              <blockquote>{{ '“They funded the bus-stop library. Nobody asked me to pretend it would scale.”'|t }}</blockquote>
+              <p class="fs-name">Amira Solano</p>
+              <p class="fs-meta">{{ 'Civic build · El Paso'|t }}</p>
+            </div>
+          </figure>
+          <div class="fs-side">
+            <figure class="fs-card fs-card--side">
+              <img src="{{ base_path }}{{ directory }}/images/portrait-jonah.jpg" alt="{{ 'Portrait of Jonah Peck'|t }}" width="1200" height="1600">
+              <div class="fs-quote">
+                <blockquote>{{ '“The stipend covered the summer I would have spent on a warehouse floor. The rain garden is still there.”'|t }}</blockquote>
+                <p class="fs-name">Jonah Peck</p>
+                <p class="fs-meta">{{ 'Climate craft · Duluth'|t }}</p>
+              </div>
+            </figure>
+            <figure class="fs-card fs-card--side">
+              <img src="{{ base_path }}{{ directory }}/images/portrait-priya.jpg" alt="{{ 'Portrait of Priya Raman'|t }}" width="1200" height="1600">
+              <div class="fs-quote">
+                <blockquote>{{ '“My mentor read the lesson plans. That was the whole difference.”'|t }}</blockquote>
+                <p class="fs-name">Priya Raman</p>
+                <p class="fs-meta">{{ 'Teaching lab · Jersey City'|t }}</p>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kit" class="fs-kit" aria-labelledby="kit-title">
+      <div class="fs-wrap fs-kit-grid">
+        <div>
+          <p class="fs-kicker">{{ 'Application kit'|t }}</p>
+          <h2 id="kit-title">{{ 'Dates, a budget sheet, and the only question we score.'|t }}</h2>
+          <p class="fs-lead">{{ 'Applications open January 12, 2027 and close March 2. Decisions go out April 4. The kit has the calendar, a one-page budget, and the prompt: what will exist in your town that does not exist today?'|t }}</p>
+          <p class="fs-fine">{{ 'One note when the kit is ready. One note when the window opens. Nothing else.'|t }}</p>
+        </div>
+        <div>
+          {% if joined %}
+            <p class="fs-status" role="status">{{ 'The kit is on its way. You can send another address if that one was wrong.'|t }}</p>
+          {% endif %}
+          {{ form }}
+        </div>
+      </div>
+    </section>
+
+    <section class="fs-close" aria-labelledby="close-title">
+      <div class="fs-wrap fs-close-inner">
+        <h2 id="close-title">{{ '120 awards. The work has to be real.'|t }}</h2>
+        <a class="fs-btn fs-btn--inverse" href="#kit">{{ 'Request the kit'|t }}</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="fs-footer">
+    <div class="fs-wrap fs-footer-grid">
+      <div>
+        <p class="fs-name">{{ 'Forge Scholars'|t }}</p>
+        <p>{{ 'A need-blind award for undergraduates who build where they live. Not a university. Not a lender.'|t }}</p>
+      </div>
+      <nav aria-label="{{ 'Footer'|t }}">
+        <a href="#award">{{ 'The award'|t }}</a>
+        <a href="#tracks">{{ 'Tracks'|t }}</a>
+        <a href="#stories">{{ 'Stories'|t }}</a>
+        <a href="#kit">{{ 'Kit'|t }}</a>
+        <a href="mailto:hello@forgescholars.org">hello@forgescholars.org</a>
+      </nav>
+    </div>
+    <p class="fs-wrap fs-legal">© 2026 Forge Scholars</p>
+  </footer>
+</div>
