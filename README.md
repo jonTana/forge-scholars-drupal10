@@ -1,35 +1,16 @@
-# Forge Scholars — Drupal 10
+# Drupal 10 theme
 
-The live preview cannot save this package. Download it from GitHub instead.
+Open this link in your own browser (Chrome, Edge, or Firefox). Do not use the button inside the preview.
 
-1. Open https://github.com/jonTana/forge-scholars-drupal10
-2. Click the green **Code** button.
-3. Click **Download ZIP**.
+https://codeload.github.com/jonTana/forge-scholars-drupal10/zip/refs/heads/main
 
-Then copy:
+The file that saves is `forge-scholars-drupal10-main.zip`.
 
-- `web/themes/custom/forge_scholars` into your Drupal site at `web/themes/custom/`
-- `web/modules/custom/forge_scholars_signup` into `web/modules/custom/`
+Then:
 
-Enable **Forge Scholars signup**. That turns on the theme and sets the front page to `/forge`.
+1. Unzip it.
+2. Copy `web/themes/custom/forge_scholars` into your Drupal site at `web/themes/custom/`.
+3. Copy `web/modules/custom/forge_scholars_signup` into `web/modules/custom/`.
+4. On your site go to Appearance and set **SITESA** as the default theme. If that name is not listed yet, enable the module **Forge Scholars signup** at Extend, then clear caches at Configuration, Performance.
 
-Local install, with PHP 8.1+ and Composer:
-
-```bash
-composer create-project drupal/recommended-project:^10 forge-local
-cd forge-local
-cp -R /path/to/unzipped/web/themes/custom/forge_scholars web/themes/custom/
-cp -R /path/to/unzipped/web/modules/custom/forge_scholars_signup web/modules/custom/
-php -d memory_limit=512M ./vendor/bin/drush site:install standard \
-  --db-url=sqlite://sites/default/files/.ht.sqlite \
-  --site-name="Forge Scholars" \
-  --account-name=admin \
-  --account-pass=admin \
-  -y
-./vendor/bin/drush en forge_scholars_signup -y
-./vendor/bin/drush cr
-```
-
-Without Drush, install Drupal in the browser, then enable **Forge Scholars signup** at `/admin/modules`.
-
-If the images folder contains `.b64` files instead of photos, run `sh scripts/restore-media.sh` once.
+Sign-in for your local site stays at `/user/login`.

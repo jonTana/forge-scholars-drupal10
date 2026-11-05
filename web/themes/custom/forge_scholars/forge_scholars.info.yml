@@ -1,6 +1,6 @@
-name: Forge Scholars
+name: SITESA
 type: theme
-description: 'Landing page for the Forge Scholars award. Drupal 10.'
+description: 'Solomon Islands tertiary education theme. Ocean blue, green, and warm yellow. Drupal 10.'
 core_version_requirement: ^10
 base theme: false
 libraries:
